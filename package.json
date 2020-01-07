@@ -1,0 +1,38 @@
+{
+  "name": "@tetsuo/ansi-parser-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/src/index.js",
+  "file": [
+    "lib",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@tetsuo/parser-ts-contrib": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.24",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "build": "rm -fr lib && tsc",
+    "watch": "rm -fr lib && tsc --watch --sourceMap",
+    "test": "npm run build && node lib/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetsuo/ansi-parser-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tetsuo/ansi-parser-ts/issues"
+  },
+  "homepage": "https://github.com/tetsuo/ansi-parser-ts"
+}
